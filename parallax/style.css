@@ -1,0 +1,417 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Lato|Open+Sans|Quattrocento+Sans);
+
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* =================================
+     Document Styles
+   ================================= */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+p {
+	margin: 0 0 20px 0;	
+}
+
+p, ul {
+	font-family: 'Quattrocento Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight:200;
+	font-style:normal;
+}
+
+img {
+	border: 0;
+}
+
+a, a:visited {
+	color: #52ACD3;
+	text-decoration: none;
+	-webkit-transition: all .2s ease-out;
+	   -moz-transition: all .2s ease-out;
+		-ms-transition: all .2s ease-out;
+		 -o-transition: all .2s ease-out;
+			transition: all .2s ease-out;
+}
+
+a:hover, a:active, a:focus {
+	color: #60C4F0;
+}
+
+h1 {
+	font-family: 'Arvo', Verdana, serif;
+	font-size:60px;
+	font-weight:500;
+	font-style:normal;
+}
+
+h2 {
+	font-family: 'Arvo', Verdana, sans-serif;
+	font-size:48px;
+	font-weight:500;
+	font-style:normal;
+}
+
+h3 {
+	font-family: 'Arvo', Verdana, sans-serif;
+	font-size:36px;
+	font-weight:500;
+	font-style:normal;
+}
+
+.float-left {
+	float: left;	
+	margin-left: 50px;
+}
+
+.float-right {
+	float: right;
+	margin-right: 50px;
+}
+
+.center {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.no-background {
+	padding: 100px 0;
+}
+
+.story {
+	margin: 0 auto;
+	overflow: auto;
+	width: 100%;
+	padding: 100px 0;
+	text-align: justify;
+}
+
+.story .float-left, .story .float-right{
+	position: relative;
+	width: 50%;
+}
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+.row {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.span4 {
+	display: inline-block;
+	width: 33.333%;
+	max-width: 33.333%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* =================================
+     Parallax Backgrounds
+   ================================= */
+   
+#first {
+	background-image: url('images/david-bg.jpg');
+}
+
+#third {
+	background-image: url('images/david-jump-bg.jpg');
+}
+
+#fifth {
+	background-image: url('images/david-think-bg.jpg');
+}
+
+#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -ms-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+  	color: #333;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#first-mobile, #third-mobile, #fifth-mobile {
+	display: none;
+}
+
+@media only screen and (orientation: portrait) and (device-width: 320px), (device-width: 768px) {
+	body {
+		width: 100%;
+	}
+	
+	#first, #third, #fifth {
+		display: none;
+	}
+	
+	#first-mobile, #third-mobile, #fifth-mobile {
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: scroll;
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+	    -ms-background-size: auto 100%;
+	    -o-background-size: auto 100%;
+	    background-size: auto 100%;
+	  	color: #333;
+		margin: 0 auto;
+		overflow: hidden;
+		height: 800px;
+	}
+	
+	#first-mobile {
+		background-image: url('images/david-bg.jpg');
+	}
+	
+	#third-mobile {
+		background-image: url('images/david-jump-bg.jpg');
+	}
+	
+	#fifth-mobile {
+		background-image: url('images/david-think-bg.jpg');
+	}
+}
+ 
+@media only screen and (orientation: landscape) and (device-width: 320px), (device-width: 768px) {
+	#first, #third, #fifth {
+		display: none;
+	}
+	
+	#first-mobile, #third-mobile, #fifth-mobile {
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: scroll;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto; 
+	    -ms-background-size: 100% auto; 
+	    -o-background-size: 100% auto;
+	    background-size: 100% auto;
+	  	color: #333;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	#first-mobile {
+		background-image: url('images/david-bg.jpg');
+	}
+	
+	#third-mobile {
+		background-image: url('images/david-jump-bg.jpg');
+	}
+	
+	#fifth-mobile {
+		background-image: url('images/david-think-bg.jpg');
+	}
+}
+
+
+/* =================================
+     First Section
+   ================================= */
+/*
+#second {
+	height: 580px;
+}
+
+#third {
+	height: 610px;
+}
+
+#fourth {
+	height: 1050px;
+}
+
+#fifth {
+	height: 540px;
+}
+
+#sixth {
+	height: 600px;
+}
+
+#seventh {
+	height: 710px;
+}
+*/
+
+/* =================================
+     First Section
+   ================================= */
+
+#headline {
+	text-align: center;
+	color: #fff;
+}
+
+#nav {
+	list-style: none;
+	position: fixed;
+	right: 20px;
+	z-index: 2;
+}
+
+#nav li {
+	margin: 0 0 15px 0;	
+}
+
+#nav li a {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #555;
+	border-radius: 15px;
+}
+
+#nav li a:hover {
+	background: rgba(255,255,255,.55);
+}
+
+
+/* =================================
+     Content Sections
+   ================================= */
+   
+span.highlight { 
+  background: rgba(0,0,0,.45);
+  color: #fff;
+  box-shadow: 7px 0 0 rgba(0,0,0,.45), -7px 0 0 rgba(0,0,0,.45);
+  padding: 0;
+  margin: 5px 0;
+  line-height: 1.45;
+}
+
+.white-box {
+	background: rgba(255,255,255,.55);
+	padding: 0 20px;
+}
+   
+
+/* =================================
+     Portfolio Section
+   ================================= */
+
+#fourth {
+	background: rgba(135,150,155,.05);
+}
+
+#portfolio {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+#portfolio .row .span4 {
+	height: auto;
+	overflow: hidden;
+}
+
+.portfolio-thumb {
+	width: 80%;
+	display: inline-block;
+	margin: 25px auto;
+	box-shadow: 3px 3px rgba(0,0,0,.3);
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		 -o-transition: all .2s ease;
+			transition: all .2s ease;
+}
+
+.portfolio-thumb:hover {
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+			transform: scale(1.1);
+}
+
+   
+/* =================================
+     Footer Section
+   ================================= */
+
+#social-links {
+	list-style: none;
+	padding-left: 0;
+	display: block;
+	margin: 0 auto 50px;
+	width: 340px;
+	height: 80px;
+}
+
+#social-links li {
+	display: inline-block;
+	float: left;
+	margin: 10px;
+}
+
+#social-links li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 4px solid #52ACD3;
+	border-radius: 50%;
+	text-align: center;
+	padding: 9px 8px 8px 9px;
+	font-size: 34px;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		 -o-transition: all .2s ease;
+			transition: all .2s ease;
+}
+
+#social-links li a:hover {
+	color: #52ACD3;
+	border-color: #52ACD3;
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+			transform: scale(1.1);
+}
+
+/*
+#second .fast{
+	background: url(images/fast.png) no-repeat center center fixed; 
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}
+*/
+
+/*
+Plugin Credit: jQuery Parallax
+Version 1.1.3
+Author: Ian Lunn
+Twitter: @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/
+*/

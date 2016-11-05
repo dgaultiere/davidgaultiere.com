@@ -1,0 +1,260 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Lato|Open+Sans|Quattrocento+Sans);
+
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+
+/* =================================
+     Document Styles
+   ================================= */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+p {
+	margin: 0 0 20px 0;	
+}
+
+p, ul {
+	font-family: 'Quattrocento Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight:200;
+	font-style:normal;
+}
+
+img {
+	border: 0;
+}
+
+a, a:visited {
+	color: #52ACD3;
+	text-decoration: none;
+	-webkit-transition: all .2s ease-out;
+	   -moz-transition: all .2s ease-out;
+		-ms-transition: all .2s ease-out;
+		 -o-transition: all .2s ease-out;
+			transition: all .2s ease-out;
+}
+
+a:hover, a:active, a:focus {
+	color: #60C4F0;
+}
+
+h1 {
+	font-family: 'Arvo', Verdana, serif;
+	font-size:60px;
+	font-weight:500;
+	font-style:normal;
+}
+
+h2 {
+	font-family: 'Arvo', Verdana, sans-serif;
+	font-size:48px;
+	font-weight:500;
+	font-style:normal;
+}
+
+h3 {
+	font-family: 'Arvo', Verdana, sans-serif;
+	font-size:36px;
+	font-weight:500;
+	font-style:normal;
+}
+
+.float-left {
+	float: left;	
+	margin-left: 50px;
+}
+
+.float-right {
+	float: right;
+	margin-right: 50px;
+}
+
+.center {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.no-background {
+	padding: 100px 0;
+}
+
+article {
+	margin: 0 auto;
+	overflow: auto;
+	width: 100%;
+	padding: 100px 0;
+	text-align: justify;
+}
+
+article .float-left, article .float-right{
+	position: relative;
+	width: 50%;
+}
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+.row {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.span4 {
+	display: inline-block;
+	width: 33.333%;
+	max-width: 33.333%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* =================================
+     Parallax Backgrounds
+   ================================= */
+
+
+#banner {
+	background-image: url(../images/david-bg.jpg); 
+}
+
+#about {
+	background-image: url(../images/david-jump-bg.jpg); 
+}
+
+#hire {
+	background-image: url(../images/david-think-bg.jpg); 
+}
+
+#banner, #about, #hire { 
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	overflow: hidden;
+	margin: 0 auto; 
+    width: 100%; 
+    height: 800px;
+    max-width: 1920px; 
+    position: relative; 
+}
+
+
+/* =================================
+     Content Sections
+   ================================= */
+   
+span.highlight { 
+  background: rgba(0,0,0,.45);
+  color: #fff;
+  box-shadow: 7px 0 0 rgba(0,0,0,.45), -7px 0 0 rgba(0,0,0,.45);
+  padding: 0;
+  margin: 5px 0;
+  line-height: 1.45;
+}
+
+.white-box {
+	background: rgba(255,255,255,.55);
+	padding: 0 20px;
+}
+   
+
+/* =================================
+     Portfolio Section
+   ================================= */
+
+#what-ive-done {
+	background: rgba(135,150,155,.05);
+}
+
+#portfolio {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+#portfolio .row .span4 {
+	height: auto;
+	overflow: hidden;
+}
+
+.portfolio-thumb {
+	width: 80%;
+	display: inline-block;
+	margin: 25px auto;
+	box-shadow: 3px 3px rgba(0,0,0,.3);
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		 -o-transition: all .2s ease;
+			transition: all .2s ease;
+}
+
+.portfolio-thumb:hover {
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+			transform: scale(1.1);
+}
+
+   
+/* =================================
+     Footer Section
+   ================================= */
+
+#social-links {
+	list-style: none;
+	padding-left: 0;
+	display: block;
+	margin: 0 auto 50px;
+	width: 340px;
+	height: 80px;
+}
+
+#social-links li {
+	display: inline-block;
+	float: left;
+	margin: 10px;
+}
+
+#social-links li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 4px solid #52ACD3;
+	border-radius: 50%;
+	text-align: center;
+	padding: 9px 8px 8px 9px;
+	font-size: 34px;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		 -o-transition: all .2s ease;
+			transition: all .2s ease;
+}
+
+#social-links li a:hover {
+	color: #52ACD3;
+	border-color: #52ACD3;
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+			transform: scale(1.1);
+}

@@ -1,0 +1,321 @@
+* { margin: 0; padding: 0; outline: 0; }
+body { font: 12px/18px  'Bitter',Arial,  sans-serif; color: #343434; text-align: left; background:#fbc679; padding:0px 0 20px 0;}
+
+html,body{ height:100%; }
+a { color:#333; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+input, select, textarea { font-family: "Trebuchet MS", Arial, sans-serif; } 
+input[type='submit']
+{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none; 
+}
+
+.ar { display: block; text-align: right; }
+.al { display: block; text-align: left; }
+.ac { display: block; text-align: center; }
+.acc { display: block; text-align: justify; }
+.cl { clear: both; height: 0; line-height: 0; font-size: 0; text-indent: -4000px; }
+.fr { float: right; display: inline; }
+.fl { float: left; display: inline; }
+.hidden { display: none; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+.shell { margin: 0 auto; width: 960px; }
+
+h1#logo{ width:80%; max-width:530px; text-align: center; margin:0px auto 0 auto; padding-bottom:20px;}
+h1#logo img{ width:100%; }
+
+#header { position:relative; z-index: 1; height:157px; background: url(images/header.jpg) no-repeat center 0;}
+
+.demo-nav-frame { margin:0 auto 30px auto;  max-width:700px; padding:0 10px;}
+.demo-nav {background: #3ABF9D; border-radius: 4px; -webkit-border-radius:4px; text-align: center; position: relative; z-index: 1;}
+.demo-nav {webkit-box-shadow: 0px 3px 0px 0px #237b65; box-shadow: 0px 3px 0px 0px #237b65; height:40px; }
+.demo-nav li.active{ background:#237b65; border: solid 1px #237b65; border-radius: 4px; -webkit-border-radius:4px;}
+.demo-nav li.sfs{ background:#237b65; border: solid 1px #237b65; border-radius:4px 0 0 4px; -webkit-border-radius:4px 0 0 4px; float: left;  margin:0; padding:10px 5px; color:#fff; font-weight: bold; font-family: Arial, sans-serif; position: absolute; top:0; left:0; z-index: 1000}
+.demo-nav li {
+    list-style: none outside none;
+    padding: 5px;
+    text-decoration: none;
+    border: solid 1px #3abf9d;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+}
+.demo-nav li a {
+    color: #fff;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.demo-nav li a:hover, .demo-nav li a.active {
+    color:#fff;
+    text-decoration: none;
+}
+
+.demo-nav li ul{ position: absolute; top:34px; left: 0; z-index: 1000; background:#3abf9d; border:solid 1px #3abf9d;}
+.demo-nav li ul{border-radius:0px 0 4px 4px; -webkit-border-radius:0 0 4px 4px; visibility: hidden;}
+.demo-nav li li{ white-space: nowrap; text-align: left;  display: block; margin:0; padding:2px 4px;}
+.demo-nav li li a{ display: block; padding: 2px 4px; border:solid 1px #3abf9d; border-radius:4px; -webkit-border-radius:4px; }
+.demo-nav li li a:hover{ background:#237b65; border: solid 1px #237b65; }
+
+#popup{  position: absolute; top:70px; z-index: 1000; width:100%;}
+#popup p.close-window{ padding-bottom:15px; display: block; font-size: 14px; text-align: center; }
+#popup p.close-window a{ color:#cecece; }
+#popup a:hover.close{ text-decoration: underline}
+#popup .DA_custom_form{ position: relative;}
+
+
+#black-screen{width:100%; background:#5a3612; height:100%; position:fixed; top:0; left:0; z-index:10; opacity: 0.7; -moz-opacity: 0.7;}
+#black-screen{filter:alpha(opacity=70); min-height: 100%; height: auto!important; height:100%;}
+.modal-nav{  background:#f27669; webkit-box-shadow: 0px 3px 0px 0px #c3594d; box-shadow: 0px 3px 0px 0px #c3594d; border:solid 1px #f27669;  }
+.modal-nav{ color:#fff; margin:-20px auto 20px auto; width:300px;  text-align: center; border-radius:4px; -webkit-border-radius:4px;}
+.modal-nav li{ display:inline-block;  list-style: none outside none; padding: 5px; text-decoration: none; border: solid 1px #f27669; margin:3px;}
+.modal-nav li a{ color:#fff; font-size: 12px; font-weight: bold; text-decoration: none; font-family: Arial, "Trebuchet MS", sans-serif; }
+
+h3{ font-size: 24px; line-height:69px; color:#fff; text-shadow: #4f9aaa 0px 2px 0px; background:#84cede; text-align: center; font-weight: normal; }
+h3{ border:solid 1px #84cede; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px; margin:0;}
+
+h3.red{ background:#e14f49; border:solid 1px #e14f49; text-shadow: #af3a36 0px 2px 0px;}
+h3.green{ background:#3abf9d; border:solid 1px #3abf9d; text-shadow: #2d9e81 0px 2px 0px;}
+
+
+textarea, input { outline: none; }
+.DA_custom_form{ margin:0 auto 30px auto; padding-bottom:15px; max-width:700px; padding:0 10px;}
+.DA_custom_form .DA_field_container{ display: block; width:100%; height:25px; padding:10px 0;  border:solid 1px #ccc; -webkit-border-radius: 3px; border-radius: 3px; }
+.DA_custom_form .DA_field_container{ position: relative; z-index: 1;}
+.DA_custom_form .textarea-frame{ display: block; width:100%; height:160px; padding:10px 0;  border:solid 1px #ccc; -webkit-border-radius: 3px; border-radius: 3px;}
+.DA_custom_form .textarea-frame{ position: relative; z-index: 1;}
+.DA_custom_form p{ display:none;}
+.DA_custom_form span{ color:#e4e4e4; float: right; text-align: left; width:5%;   font-size: 21px; line-height:10px; }
+.DA_custom_form  span.error, .DA_custom_form a.error{ color:#f27669;}
+.DA_custom_form span.ok{ color:#3abf9d;}
+.DA_custom_form .field{ float: left; display: inline; width:93%;  font-size: 14px; line-height:14px; border:0; color:#c6c6c6; font-weight: bold; height:100%; padding:0 0 0 2%; overflow:auto; resize: none;}
+
+
+
+.DA_inner_frame{  background:#fff; padding-top:10px; border:solid 1px #fff; -webkit-border-radius: 0px 0px 5px 5px; border-radius: 0px 0px 5px 5px;}
+
+.DA_custom_form .btnp input{ background:#3abf9d; font-size: 24px; color:#fcf0d6; height:50px; line-height:50px; width:30%; cursor:pointer; text-shadow: #298c73 0px 0px 2px; }
+.DA_custom_form .btnp input{ webkit-box-shadow: 0px 3px 0px 0px #237b65; box-shadow: 0px 3px 0px 0px #237b65; -webkit-border-radius: 10px; border-radius: 10px;}
+.DA_custom_form .btnp input{ border:solid 1px #3abf9d; text-align: center; margin:25px auto; display: block;}
+.DA_custom_form .btnp .blue{ background:#84cede; webkit-box-shadow: 0px 3px 0px 0px #6297a2; box-shadow: 0px 3px 0px 0px #6297a2; border:solid 1px #84cede; color:#fff; text-shadow: #6297a2 0px 0px 2px;}
+.DA_custom_form .btnp .red{ background:#f27669; webkit-box-shadow: 0px 3px 0px 0px #c3594d; box-shadow: 0px 3px 0px 0px #c3594d; border:solid 1px #f27669; text-shadow: #c3594d 0px 0px 2px;}
+
+.DA_custom_form input[type="submit"]:hover{background: #237b65; webkit-box-shadow: 0px 3px 0px 0px #3abf9d; box-shadow: 0px 3px 0px 0px #3abf9d; border:solid 1px #237b65; }
+.DA_custom_form  input.blue[type="submit"]:hover{background: #6297a2; webkit-box-shadow: 0px 3px 0px 0px #84cede; box-shadow: 0px 3px 0px 0px #84cede; border:solid 1px #6297a2;}
+.DA_custom_form  input.red[type="submit"]:hover{background: #c3594d; webkit-box-shadow: 0px 3px 0px 0px #f27669; box-shadow: 0px 3px 0px 0px #f27669; border:solid 1px #c3594d;}
+
+label.fl{ line-height:23px; margin-left:-10px; width:80%;}
+
+.DA_custom_form .check-box{ float: left; display: inline;  }
+.DA_custom_form span.checkbox{ line-height:0px; padding:0; width:auto; float: left; display: inline; cursor:default; margin:0px 8px 0 0;    width:auto; height:23px; }
+.DA_custom_form span.cust_checkbox_on{ }
+.DA_custom_form span.cust_checkbox .icon-ok{ float: left; display: inline;  line-height:20px;  color:#fff; height:20px; width:20px; border:solid 1px #ccc;}
+.DA_custom_form span.cust_checkbox_on .icon-ok{ color:#f27669;}
+.DA_custom_form .check{ float: left; display: inline; }
+.DA_custom_form span.radio {  line-height:0px; padding:0; width:auto; float: left; display: inline; cursor:default; margin:0px 8px 0 0;    width:auto; height:21px; padding-bottom:6px }
+.DA_custom_form span.cust_checkbox .icon-circle{ float: left; display: inline;  line-height:22px; width:21px; height:21px; color:#fff;  border:solid 1px #ccc; font-size: 17px; text-align: center;}
+.DA_custom_form span.cust_checkbox .icon-circle{ border-radius:20px; -webkit-border-radius:20px; }
+.DA_custom_form span.cust_radio_on .icon-circle{ color:#3abf9d; }
+
+.DA_holder{ width:80%; margin:16px 10%; padding:0;  display: inline-block;}
+.DA_double{ width:37.5%!important; margin:16px 0; float:left; display: inline; }
+.DA_double span{ width:12%!important; }
+.DA_double .field{ width:85%!important; }
+.left-aligned{ padding:0 5% 0 10%}
+
+.DA_check_holder, .DA_radio_holder{ margin:16px 10%;}
+.DA_check_holder label, .DA_radio_holder label{ padding:0; }
+.DA_custom_form .DA_check_holder label.error{ bottom:-25px!important; }
+.DA_custom_form .DA_radio_holder label.error{ bottom:-25px!important; }
+.DA_radio_holder{ padding:0px 0 0 0;}
+
+.DA_custom_form .hidden{ display: none;}
+
+.DA_radio_holder, .DA_check_holder, .DA_select_holder{ position:relative;}
+.DA_custom_form .DA_radio_holder label.error, .DA_custom_form .DA_check_holder label.error{ left:0; right:auto!important;}
+.DA_radio_holder label.error em, .DA_check_holder label.error em{ left:5px; right:auto;}
+
+ .select_field{ border:0; visibility:hidden; font-size: 0; line-height:0; text-indent: -4000px; height:0!important; padding:0; float: left;}
+ @-moz-document url-prefix() {.radio-btn, .check-box { visibility:hidden;  width:0;}
+ }
+ .radio-btn, .check-box{ border:0; font-size: 0; line-height:0; text-indent: -4000px; height:0!important; padding:0; float: left; }
+ .radio-btn, .check-box{ margin-left:-4000px}
+
+
+.DA_custom_form label{ font-size: 16px; color:#c6c6c6; display: block; font-family: 'Bitter',Arial, Trebuchet MS, sans-serif; font-weight: normal; padding-bottom:8px}
+.DA_custom_form label.valid{ display:none!important;}
+.DA_custom_form label.error{ height:22px; font-size: 15px; position:absolute;  bottom:-31px; right:0; z-index: 100; float: right; font-weight: normal;  }
+.DA_custom_form label.error{  background:#f27669; color:#fff; padding:0 5px; }
+.DA_custom_form label.error{ border:solid 1px #f27669; -webkit-border-radius: 4px; border-radius: 4px; line-height:22px; }
+.DA_custom_form label.error{ -webkit-box-shadow: 0px 1px 0px 0px #b65a44; box-shadow: 0px 1px 0px 0px #b65a44;}
+.DA_custom_form label.error:after{
+	border: solid;
+    border-color: #111 transparent;
+    border-color: rgba(242,118,105,1) transparent;
+    border-width: 0 7px 7px 7px;
+    top: -7px;
+    content: "";
+    display: block;
+    right: 12px;
+    position: absolute;
+    z-index: 99;
+}
+.DA_check_holder label.error:after, .DA_radio_holder label.error:after{
+	border: solid;
+    border-color: #111 transparent;
+    border-color: rgba(242,118,105,1) transparent;
+    border-width: 0 7px 7px 7px;
+    top: -7px;
+    content: "";
+    display: block;
+    right: auto;
+    left:3px;
+    position: absolute;
+    z-index: 99;
+}
+.DA_custom_form label.error em{ font-style: normal; width:0px; 
+height:0px; 
+border-left:7px solid transparent;  /* left arrow slant */
+border-right:7px solid transparent; /* right arrow slant */
+border-bottom:7px solid #f27669; /* bottom, add background color here */
+font-size:0px;
+line-height:0px;
+position:absolute;
+top:-7px;
+right:13px;}
+
+.DA_custom_form .arrow {
+	width:0px; 
+	height:0px; 
+	border-left:7px solid transparent;  /* left arrow slant */
+	border-right:7px solid transparent; /* right arrow slant */
+	border-bottom:7px solid #f27669; /* bottom, add background color here */
+	font-size:0px;
+	line-height:0px;
+	position:absolute;
+	top:-7px;
+	right:13px;
+}
+
+small.ac {  position:relative; z-index: 1; margin:-10px 0 10px 0;}
+small a{ font-size: 14px; color:#84cede; position:relative; z-index: 1; margin:-10px 0 10px 0;}
+
+.DA_custom_form .horizontal{  width:90%; float: left; display: inline; margin:17px 5%;}
+.DA_custom_form .horizontal label{ float: left; display: inline; width:35%; padding:0; line-height: 45px}
+.DA_custom_form .horizontal label.error{ display: block; float: none; width:auto; line-height: 22px; padding:0 5px;}
+.DA_custom_form .horizontal .DA_field_container{ float: left; display: inline; width:64%;}
+.DA_custom_form .horizontal .field{ width:91.5%;}
+.DA_custom_form .horizontal  .DA_field_container span{ width:6.5%;}
+.DA_custom_form .horizontal .sbHolder{ width:64%; float:left;}
+.DA_custom_form .horizontal  label.fl, .horizontal label.fl { width:80%; line-height: 23px }
+.DA_custom_form .horizontal .textarea-frame { width:64%; float: left; display: inline; }
+
+/* -------------------------------  Media Query Max Width 480 ------------------------------- */
+
+@media only screen and (max-width:480px) {
+	
+    
+}
+
+
+
+
+/* -------------------------------  Media Query Max Width 320 ------------------------------- */
+
+@media only screen and (max-width:320px){
+	.DA_custom_form .field{ width:86%!important;}
+    .DA_custom_form span{width:10%;}
+	.DA_custom_form .horizontal span{width:14%!important; }
+    .DA_double span{ width:10%!important;}
+    .DA_custom_form .DA_double .field{ width:86%!important;}
+    .horizontal span{ width:12%!important;}
+    .horizontal label{ width:35%; line-height: 36px}
+    .horizontal .DA_field_container{ width:64%; padding:4px 0;}
+    .DA_field_container {padding:4px 0!important;}
+    .DA_custom_form label.error{ font-size: 11px;  }
+    .DA_custom_form .sbHolder { padding:4px 0!important;}
+    .DA_custom_form .sbToggle{top:7px!important;}
+    .DA_custom_form .sbSelector{top:5px!important;}
+    .DA_custom_form .horizontal .field{ width:84%!important;}
+    .horizontal .dbl-lbl{ line-height: 18px!important}
+	.DA_custom_form .btnp input{ width:40%; height:40px; line-height:40px;}
+    h3{ font-size: 20px;}
+    .DA_double{ width:80%!important; padding:0; float: none; display: inline-block; margin:16px 10%;}
+    .DA_custom_form .left-aligned{ padding:0;}
+    .DA_custom_form label.fl{ font-size: 14px; margin-left:-15px;}
+    .DA_custom_form span.checkbox, .DA_custom_form span.radio{ width:21%!important; }
+    .demo-nav li.sfs{ display: none; float:none; position: static;}
+    .demo-nav li ul{ left:auto; right:0;}
+    .demo-nav li li{ margin:2px 0;}
+    #popup{ top:20px;}
+    .DA_custom_form label.fl{ font-size: 14px; margin-left:-20px;}
+    .DA_custom_form label.error:after{ right:7px;}
+    .DA_custom_form .sbToggle{ width:23px; font-size: 16px; right:0%!important;}
+}
+
+/* -------------------------------  Media Query Min Width 321 Max Width 640 ------------------------------- */
+
+@media only screen and (min-width: 321px) and (max-width:640px){
+
+    h3{ font-size: 20px;}
+    .DA_custom_form .btnp input{ width:45%; height:45px; line-height:45px;}
+    .DA_double{ width:80%!important; padding:0; float: none; display: block; margin:16px auto;}
+    .left-aligned{ padding:0;}
+    label.fl{ font-size: 14px; margin-left:-20px;}
+    .DA_custom_form .sbToggle{ width:23px;  right:0%!important;}
+    .DA_custom_form label.error{
+        font-size: 13px;
+        line-height: 20px;
+        height:20px;
+        bottom:-28px;
+    }
+    .DA_custom_form label{
+        font-size: 15px;
+        padding-bottom: 2px;
+    }
+    .DA_custom_form .horizontal label{ font-size: 14px}
+    .DA_double{
+        margin:13px auto;
+    }
+    .DA_custom_form .btnp input{
+        height:45px;
+        line-height: 45px;
+        width:25%;
+    }
+    .DA_custom_form span{
+        width:8%!important;
+    }
+    .DA_custom_form .horizontal span{ width:12%!important;}
+    .DA_custom_form .horizontal .field{ width:85%!important;}
+    .horizontal .sbHolder{ width:64%!important; float:left;}
+
+    .DA_custom_form span.checkbox, .DA_custom_form span.radio{
+        width:15%!important;
+    }
+    .DA_custom_form .field{
+        width:89%!important;
+    }
+
+    .demo-nav li.sfs{ display: none; float:none; position: static;}
+    .demo-nav li ul{ left:auto; right:0;}
+    .demo-nav li li{ margin:2px 0;}
+    #popup{ top:20px;}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome */
+    .DA_custom_form .horizontal .sbHolder {
+     margin-top:-14px;
+     position:relative;
+    }
+
+    /* Safari only override */
+    ::i-block-chrome,.DA_custom_form .horizontal .sbHolder {
+        margin-top:-14px;
+        position:relative;
+    }
+}

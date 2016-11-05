@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<title>David Gaultiere, Web Designer</title>
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter:400,400italic,700" type="text/css">
+
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('#nav').localScroll(800);
+			
+			//.parallax(xPosition, speedFactor, outerHeight) options:
+			//xPosition - Horizontal position of the element
+			//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+			//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+			$('#first').parallax("50%", 0.2, true);
+			$('#third').parallax("50%", 0.1, true);
+			$('#fifth').parallax("50%", 0.1, true);
+			$('.fast').parallax("50%", 0.4, true);
+
+		
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('#first').css({
+		    height:$(window).height(),
+		    width:$(window).width()
+		 });
+		});	
+	</script>
+</head>
+
+<body>
+	<ul id="nav">
+		<li><a href="#first" title="Who I Am"></a></li>
+	    <li><a href="#third" title="What I Do"></a></li>
+	    <li><a href="#fourth" title="View My Work"></a></li>
+	    <li><a href="#sixth" title="Get In Touch"></a></li>
+	</ul>
+	
+	<div id="first">
+		<div class="story">
+	    	<div class="float-left">
+			<h2><span class="highlight">David Gaultiere,
+			<br/>Web Designer</span></h2>
+	        <p><span class="highlight">"A good website should be 
+	        <br/>fresh, clean, beautiful, and functional."</span></p>
+	        </div>
+	    </div>
+	</div>
+	
+	<!-- Begin First Mobile -->
+	<div id="first-mobile">
+		<div class="story">
+	    	<div class="float-left">
+			<h2><span class="highlight">David Gaultiere,
+			<br/>Web Designer</span></h2>
+	        <p><span class="highlight">"A good website should be 
+	        <br/>fresh, clean, beautiful, and functional."</span></p>
+	        </div>
+	    </div>
+	</div>
+	<!-- End First Mobile -->
+	
+	<div id="second" class="no-background">
+		<div class="story">
+	    	<div class="center">
+			<h2>I design your ideal presence online</h2>
+	        <p>combining effective marketing strategy with a beautiful design aesthetic</p>
+	        </div>
+	    </div>
+	</div>
+	
+	<div id="third">
+		<div class="story"><div class="fast"></div>
+	    	<div class="float-right white-box">
+	            <h2>How I work</h2>
+	            <p>It's all about the relationship. My goal is to work with you &mdash; to understand your needs and goals &mdash; in order to build a solution that is not only effective, but outstanding.</p>
+	            <p>I love to try new things and explore different opportunities. I'm an entrepreneur myself, having started a tea business right out of college, and am continually pursuing <em>ideas</em> and <em>possibilities</em>. If you want to discuss a possible venture or just want to chat and kick around ideas, I'd love to grab a cup of coffee.</p>
+	        </div>
+	    </div>  
+	</div>
+	
+	<!-- Begin Third Mobile -->
+	<div id="third-mobile">
+		<div class="story"><div class="fast"></div>
+	    	<div class="float-right white-box">
+	            <h2>How I work</h2>
+	            <p>It's all about the relationship. My goal is to work with you &mdash; to understand your needs and goals &mdash; in order to build a solution that is not only effective, but outstanding.</p>
+	            <p>I love to try new things and explore different opportunities. I'm an entrepreneur myself, having started a tea business right out of college, and am continually pursuing <em>ideas</em> and <em>possibilities</em>. If you want to discuss a possible venture or just want to chat and kick around ideas, I'd love to grab a cup of coffee.</p>
+	        </div>
+	    </div>  
+	</div>
+	<!-- End Third Mobile -->
+	
+	<div id="fourth" class="no-background">
+		<div class="story">
+	    	<div class="center">
+			<h2>What I've done</h2>
+			<p>Click an image below to visit the website</p>
+	        <div id="portfolio">
+	        	<div class="row">
+	        		<div class="span4">
+	        			<a href="http://www.soulshepherding.org" title="SoulShepherding.org" target="_blank">
+	        				<img src="images/website_soulshepherding.jpg" class="portfolio-thumb zoom" />
+	        			</a>
+	        		</div>
+	        		<div class="span4">
+	        			<a href="http://www.christiansoulcare.com" title="ChristianSoulCare.com" target="_blank">
+	        				<img src="images/website_christiansoulcare.jpg" class="portfolio-thumb zoom" />
+	        			</a>
+	        		</div>
+	        		<div class="span4">
+	        			<a href="http://www.workforcematters.com" title="WorkforceMatters.com" target="_blank">
+	        				<img src="images/website_workforcematters.jpg" class="portfolio-thumb zoom" />
+	        			</a>
+	        		</div>
+	        	</div>
+	        	<div class="clear"></div>
+	        	<div class="row">
+	        		<div class="span4">
+	        			<a href="http://www.allierae.com" title="AllieRae.com" target="_blank">
+	        				<img src="images/website_allierae.jpg" class="portfolio-thumb zoom" />
+	        			</a>
+	        		</div>
+	        		<div class="span4">
+	        			<a href="http://www.mizubamatcha.com" title="MizubaMatcha.com" target="_blank">
+	        				<img src="images/website_mizubamatcha.jpg" class="portfolio-thumb zoom" />
+	        			</a>
+	        		</div>
+	        		<div class="span4">
+	        			<a href="http://www.earthos.co" title="Earthos.co" target="_blank">
+	        				<img src="images/launchrock_earthos.jpg" class="portfolio-thumb zoom" />
+	        			</a>
+	        		</div>
+	        	</div>
+	        </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div id="fifth">
+		<div class="story">
+	    	<div class="float-left white-box">
+	        	<h2>Work with me</h2>
+	            <p>My mission is to help you craft a design aesthetic that represents who you are and puts your best foot forward.</p>
+	        </div>
+	    </div>
+	</div>
+	
+	<!-- Begin Fifth Mobile -->
+	<div id="fifth-mobile">
+		<div class="story">
+	    	<div class="float-left white-box">
+	        	<h2>Work with me</h2>
+	            <p>My mission is to help you craft a design aesthetic that represents who you are and puts your best foot forward.</p>
+	        </div>
+	    </div>
+	</div>
+	<!-- End Fifth Mobile -->
+	
+	<div id="sixth" class="no-background">
+		<div class="story">
+	    	<div class="center">
+		        <h2>Let's get to know each other</h2>
+		        
+		        <ul id="social-links">
+		            <li><a href="http://www.twitter.com/dgaultiere" title="Follow me on Twitter" target="_blank"><span class="brandico-twitter"></span></a></li>
+		            <li><a href="http://www.instagram.com/dgaultiere" title="Check out my Instagram" target="_blank"><span class="brandico-instagram"></span></a></li>
+		            <li><a href="http://www.facebook.com/dgaultiere" title="Friend me on Facebook" target="_blank"><span class="brandico-facebook"></span></a></li>
+		            <li><a href="http://www.linkedin.com/in/dgaultiere" title="Connect with me on LinkedIn" target="_blank"><span class="brandico-linkedin"></span></a></li>
+				<!--<li><a href="http://dgaultiere.tumblr.com" title="Read my Tumblr" target="_blank"><span class="brandico-tumblr"></span></a></li>-->
+		        </ul>
+		        
+		        <div class="clear"></div>
+		        
+		        <p>&copy; 2013 David Gaultiere</p>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

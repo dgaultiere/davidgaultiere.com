@@ -1,0 +1,407 @@
+/* ----------------------------------------
+
+		CSS by David Gaultiere
+		http://www.davidgaultiere.com
+		
+---------------------------------------- */
+
+
+
+/* ----------------------------------------
+		Base Styles 
+---------------------------------------- */
+
+
+html {
+	border-top: 5px solid #2099B4; 
+
+	/*
+  border-top: 5px solid #33a0e5;
+  */
+}
+
+/*
+html {
+    background-image: url('sf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+html::before {
+  	content: '';
+  	background-color: rgba(0,0,0,.8);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+}
+
+*/
+
+body {
+    display: block;
+    font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a,
+a:visited {
+    color: #2099B4;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #333;
+    cursor: pointer;
+}
+
+.hr {
+	display: block;
+	width: 96%;
+	height: 1px;
+	margin: 10px auto;
+	border-top: 1px solid #e7e7e7;
+}
+
+.hr-side {
+	display: inline-block;
+	width: 10%;
+	max-width: 160px;
+	height: 10px;
+	margin: 0 5px;
+	border-top: 1px solid #e7e7e7;
+}
+
+.grid {
+	display: block;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-item {
+	display: block;
+	float: left;
+	height: auto;
+	width: 97%;
+	margin: 1.5%;
+}
+
+#headshot {
+  display: block;
+  margin: 100px auto 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('david.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-indent: -999999px;
+}
+
+#name {
+  display: block;
+  margin: 40px auto 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+#title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.description {
+  display: block;
+  margin: 30px auto;
+  width: 98%;
+  max-width: 640px;
+  padding: 1%;
+}
+
+.description p {
+    margin: 0 auto 15px;
+    padding-bottom: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#connect {
+    display: block;
+    margin: 30px auto 20px;
+    text-align: center;
+}
+
+#connect h3 {
+    display: block;
+    margin: 0 auto 15px;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#connect p {
+    margin: 0 auto 20px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#social a,
+#social a:visited {
+    margin: 0 8px;
+    font-size: 28px;
+    color: #555;
+}
+
+#social a:hover,
+#social a:active,
+#social a:focus {
+    color: #2099B4;
+}
+
+.tooltip {
+    display: inline;
+    position: relative;
+}
+
+.tooltip span {
+    display: none;
+}
+
+.tooltip:hover span,
+.tooltip:active span,
+.tooltip:focus span {
+    display: inline-block;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    background: #ddd;
+    background: rgba(221, 221, 221, .9);
+    border-radius: 2px;
+    color: #333;
+    font-size: 14px;
+    bottom: 26px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    z-index: 98;
+}
+
+.tooltip:hover span:before,
+.tooltip:active span:before,
+.tooltip:focus span:before {
+    border: solid;
+    border-color: #ddd transparent;
+    border-width: 6px 6px 0 6px;
+    top: 26px;
+    content: "";
+    left: 50%;
+    margin-left: -6px;
+    position: absolute;
+    z-index: 99;
+}
+
+.fa.fa-medium {
+		font-size: 26px;
+}
+
+#ichthys,
+#ichthys:visited {
+    display: block;
+    margin: 40px auto 20px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+#ichthys:hover,
+#ichthys:active,
+#ichthys:focus {
+    color: #2099B4;
+}
+
+div#balloon {
+	box-shadow: 0 0 5px #999;
+}
+
+#balloon-frame #document .light form {
+	background: #f9f9f9;
+}
+
+
+
+/* ----------------------------------------
+		Work Page 
+---------------------------------------- */
+
+#back-home {
+	display: inline-block;
+	margin: 10px 12px;
+	font-size: 16px;
+}
+
+#work-page #headshot {
+  margin: 40px auto 0;
+  width: 70px;
+  height: 70px;
+}
+
+#work-page #name {
+	margin: 15px auto 0;
+  font-size: 22px;
+}
+
+#work-page #title {
+	margin: 50px auto;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+#work-page .description {
+	margin: 40px auto;
+	max-width: 360px;
+}
+
+#work-page em {
+	font-style: normal;
+	font-weight: 700;
+}
+
+#work-page .hr {
+	width: 40%;
+	max-width: 200px;
+	margin: 20px auto;
+}
+
+#portfolio {
+	margin: 60px auto;
+}
+
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+#work-page .grid {
+	max-width: 768px;
+}
+
+#work-page a.grid-item {
+	color: #333;
+	min-width: 47%;
+	border-radius: 5px;
+	-webkit-transition: 0.3s ease all;
+	   -moz-transition: 0.3s ease all;
+	    -ms-transition: 0.3s ease all;
+	     -o-transition: 0.3s ease all;
+	        transition: 0.3s ease all;
+}
+
+#work-page a.grid-item:hover,
+#work-page a.grid-item:focus,
+#work-page a.grid-item:active {
+	color: rgba(26,153,181,1);
+	background: rgba(150,150,150,0.18);
+	/* background: rgba(115,187,199,0.2); */
+}
+
+#work-page .grid-item img {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	max-width: 100%;
+	height: auto;
+}
+
+#work-page .grid-item h4 {
+	text-align: center;
+	margin: 15px auto 5px;
+	padding: none;
+}
+
+#work-page .grid-item h5 {
+	text-align: center;
+	margin: 0 auto 25px;
+	padding: none;
+	color: #b7b7b7;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#work-page #blurb h2 {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+#work-page #blurb h3 {
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 25px;
+}
+
+
+
+/* ----------------------------------------
+		Media Queries
+---------------------------------------- */
+
+
+@media screen and (min-width: 768px) {
+	.grid-item {
+		width: 47%;
+	}
+	
+	#back-home {
+		margin: 10px 20px;
+	}
+
+	#work-page #title {
+		font-size: 36px;
+	}
+	
+	#work-page .description {
+		max-width: 640px;
+	}
+	
+	.hr-side {
+		width: 18%;
+		margin: 0 10px;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.grid-item {
+		width: 30.33333%;
+	}
+}
+
+@media screen and (min-width: 1200px) { }

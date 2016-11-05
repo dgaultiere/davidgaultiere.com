@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	<title>Pure CSS Forms</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/jquery.selectbox.css" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.9.0.js" type="text/javascript" charset="utf-8"></script>
+	<!--script src="js/jquery.animate-shadow-min.js" type="text/javascript" charset="utf-8"></script-->
+	<!--script src="js/jquery.validate.js" type="text/javascript" charset="utf-8"></script-->
+	<script src="js/combined.js" type="text/javascript" charset="utf-8"></script>
+	<!--script src="js/jquery.selectbox-0.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cust_checkbox_plugin.js" type="text/javascript" charset="utf-8"></script-->
+	<script src="js/make_dropdown.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/js-func.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<h1 id="logo"><img src="css/images/forms-logo.png" alt="" /></h1>
+	<div class="demo-nav-frame">
+		<ul class="demo-nav">
+			<li class="sfs">Select Form Style</li>
+		    <li class="active"><a href="vertical.html" class="load">Vertical</a></li>
+		    <li><a href="horizontal.html" class="load">Horizontal</a></li>
+		    <li>
+		    	<a href="#">Modal</a>
+		    	<ul class="sub-modal">
+		    	    <li name="registration-form"><a href="modal-registration.html" class="load" >Registration</a></li>
+					<li name="contact-form"><a href="modal-contact.html" class="load" >Contact</a></li>
+					<li name="login-form"><a href="modal-login.html" class="load">Login</a></li>
+		    	</ul>
+		    </li>
+		</ul>
+	</div>	
+	<div class="optional"></div>
+	<script type="text/javascript" charset="utf-8">
+		$('.optional').load('vertical.html',function() { call_func(); all_events(); validate_all_forms(); });
+	</script>
+</body>
+</html>

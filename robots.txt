@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /blue/
+Disallow: /legacy/
+Disallow: /parallax/
+Disallow: /stacky/
+Disallow: /portfolio/
