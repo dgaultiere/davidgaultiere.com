@@ -1,46 +1,17 @@
 /* ----------------------------------------
-
 		CSS by David Gaultiere
 		http://www.davidgaultiere.com
-		
 ---------------------------------------- */
 
 
 
 /* ----------------------------------------
-		Base Styles 
+		Base Styles
 ---------------------------------------- */
 
-
 html {
-	border-top: 5px solid #2099B4; 
-
-	/*
-  border-top: 5px solid #33a0e5;
-  */
+	border-top: 5px solid #2099B4;
 }
-
-/*
-html {
-    background-image: url('sf.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    z-index: -1;
-}
-
-html::before {
-  	content: '';
-  	background-color: rgba(0,0,0,.8);
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-}
-
-*/
 
 body {
     display: block;
@@ -260,7 +231,7 @@ div#balloon {
 
 
 /* ----------------------------------------
-		Work Page 
+		Work Page
 ---------------------------------------- */
 
 #back-home {
@@ -379,7 +350,7 @@ div#balloon {
 	.grid-item {
 		width: 47%;
 	}
-	
+
 	#back-home {
 		margin: 10px 20px;
 	}
@@ -387,11 +358,11 @@ div#balloon {
 	#work-page #title {
 		font-size: 36px;
 	}
-	
+
 	#work-page .description {
 		max-width: 640px;
 	}
-	
+
 	.hr-side {
 		width: 18%;
 		margin: 0 10px;
