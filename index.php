@@ -126,7 +126,6 @@ function get_data($var) {
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>David Gaultiere</title>
 
@@ -143,7 +142,6 @@ function get_data($var) {
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="/jquery-popup.js"></script>
 </head>
-
 <body id="home-page">
 
     <div id="headshot">David Gaultiere</div>
@@ -152,7 +150,7 @@ function get_data($var) {
 
     <div id="about" class="description">
         <p>Self-starter and technology enthusiast. Passionate about creativity, culture, and innovation. Husband to the wonderful <a href="http://www.loveandelyse.com/" target="_blank" title="Love & Elyse">Brianne Elyse</a>, sometimes <a href="http://www.medium.com/@dgaultiere" title="Read my blog on Medium.com" target="_blank">writer</a>, and always learner. Currently serving as a Product Manager at <a href="http://www.appfolioinc.com/" target="_blank" title="Cloud-based software designed for specific industries">Appfolio</a>. Previously launched startups <a href="http://www.fastcompany.com/3029879/most-creative-people/can-the-lyft-of-moving-take-the-pain-out-of-one-of-lifes-most-hated-act" target="_blank" title="Using technology and crowd-sourcing to take the pain out of moving">NextMover</a>, Fonogram, and <a href="http://www.mizubatea.com/" target="_blank" title="All tea is not created equal">Mizuba Tea Co</a>.</p>
-        <p>View <a href="/work" title="My Work">my work</a> or <a href="#" id="onclick">get in touch</a>.</p>
+        <p>View <a href="/work" title="My Work">my work</a> or <a id="onclick">get in touch</a>.</p>
     </div>
 
     <!-- <a class="tooltip"><span>Coming Soon</span>Stacky</a> -->
@@ -168,7 +166,7 @@ function get_data($var) {
 
     <a href="http://bible.com/59/eph.2.8.esv" target="_blank" id="ichthys">[ Eph 2:8 ]</a>
 
-    <div id="contact-form">
+    <div id="contactdiv">
       <?php
       if (!empty($error_msg)) {
         echo '<p class="error">ERROR: '. implode("<br />", $error_msg) . "</p>";
@@ -188,7 +186,6 @@ function get_data($var) {
       </form>
     </div>
 
-
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -197,9 +194,7 @@ function get_data($var) {
 
 		  ga('create', 'UA-43088112-1', 'davidgaultiere.com');
 		  ga('send', 'pageview');
-
 		</script>
 
 </body>
-
 </html>

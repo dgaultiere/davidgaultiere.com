@@ -1,34 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Fauna+One|Muli);
 #mainform{
 width:960px;
 margin:20px auto;
 padding-top:20px;
 font-family: 'Fauna One', serif;
 display:block;
-}
-h2{
-margin-left: 65px;
-text-shadow:1px 0px 3px gray;
-}
-h3{
-font-size:18px;
-text-align:center;
-text-shadow:1px 0px 3px gray;
-}
-#onclick{
-padding:3px;
-color:green;
-cursor:pointer;
-padding:5px 5px 5px 15px;
-width:70px;
-color:white;
-background-color:#123456;
-box-shadow:1px 1px 5px grey;
-border-radius:3px;
-}
-b{
-font-size:18px;
-text-shadow:1px 0px 3px gray;
 }
 #popup{
 padding-top:80px;
