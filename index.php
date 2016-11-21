@@ -9,8 +9,8 @@
     <script type="text/javascript" src="//use.typekit.net/bex1ayv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    <link href="/main.css" rel="stylesheet">
-    <link href="/contact.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/contact.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 		<script type="text/javascript" src="/jquery-1.3.2.min.js"></script>
