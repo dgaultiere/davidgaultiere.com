@@ -1,13 +1,51 @@
 #contact {
-  background-color: #fff;
-  opacity: 0.92;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  display: none;
+  /*display: block;*/
+  margin: 0;
+  background-color: rgba(51,51,51,0.85);
+  font-size: 16px;
+}
+
+#contact-form {
   width: 500px;
   max-width: 90%;
-  /*display: none;*/
   display: block;
-  margin: 0 auto;
+  position: relative;
+  margin: 10% auto 0;
+  padding: 15px 25px;
+  border-radius: 3px;
+  background-color: #fff;
+  opacity: 1;
   font-size: 16px;
+  color: #333;
+}
+
+#contact-form h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+#cancel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 32px;
+  line-height: .7;
+  color: #777;
+  cursor: pointer;
+}
+
+#cancel:hover,
+#cancel:focus,
+#cancel:active {
+  color: #333;
 }
 
 input,

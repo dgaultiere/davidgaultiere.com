@@ -20,7 +20,7 @@ body {
     color: #333;
     padding: 0;
     z-index: 1;
-    position: relative;
+    /*position: relative;*/
 }
 
 *,
@@ -137,7 +137,6 @@ a:active {
     margin: 0 auto 15px;
     font-size: 24px;
     font-weight: 300;
-    font-style: italic;
 }
 
 #connect p {

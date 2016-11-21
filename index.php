@@ -47,23 +47,27 @@
 		</div>
 
     <div id="contact">
-      <?php
-      if (!empty($error_msg)) {
-        echo '<p class="error">'. implode("<br />", $error_msg) . "</p>";
-      }
-      if ($result != NULL) {
-        echo '<p class="success">'. $result . "</p>";
-      }
-      ?>
-      <form action="<?php echo basename(__FILE__); ?>" method="post">
-        <noscript>
-          <input type="hidden" name="nojs" id="nojs">
-        </noscript>
-        <input type="text" name="name" id="name" placeholder="Name" value="<?php get_data("name"); ?>">
-        <input type="text" name="email" id="email" placeholder="Email" value="<?php get_data("email"); ?>">
-        <textarea name="comments" id="comments" rows="5" cols="20" placeholder="Message"><?php get_data("comments"); ?></textarea>
-        <input type="submit" name="submit" id="submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?>>
-      </form>
+			<div id="contact-form">
+				<span id="cancel">&times;</span>
+				<h3>Contact Me</h3>
+	      <?php
+	      if (!empty($error_msg)) {
+	        echo '<p class="error">'. implode("<br />", $error_msg) . "</p>";
+	      }
+	      if ($result != NULL) {
+	        echo '<p class="success">'. $result . "</p>";
+	      }
+	      ?>
+	      <form action="<?php echo basename(__FILE__); ?>" method="post">
+	        <noscript>
+	          <input type="hidden" name="nojs" id="nojs">
+	        </noscript>
+	        <input type="text" name="name" id="name" placeholder="Name" value="<?php get_data("name"); ?>">
+	        <input type="text" name="email" id="email" placeholder="Email" value="<?php get_data("email"); ?>">
+	        <textarea name="comments" id="comments" rows="5" cols="20" placeholder="Message"><?php get_data("comments"); ?></textarea>
+	        <input type="submit" name="submit" id="submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?>>
+	      </form>
+			</div>
     </div>
 
 		<script>
