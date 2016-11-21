@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  setTimeout(popup, 3000);
-  function popup() {
-    $("#logindiv").css("display", "block");
-  }
+  // setTimeout(popup, 3000);
+  // function popup() {
+  //   $("#logindiv").css("display", "block");
+  // }
   $("#onclick").click(function() {
     $("#contact").css("display", "block");
   });
@@ -11,27 +11,27 @@ $(document).ready(function() {
   });
 
   // Contact form popup send-button click event
-  $("#send").click(function() {
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var contact = $("#contactno").val();
-    var message = $("#message").val();
-    if (name == "" || email == "" || contactno == "" || message == "") {
-      alert("Please Fill All Fields");
-    } else {
-      if (validateEmail(email)) {
-        $("#contact").css("display", "none");
-      } else {
-        alert('Invalid Email Address');
-      }
-      function validateEmail(email) {
-        var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
-        if (filter.test(email)) {
-          return true;
-        } else {
-          return false;
-        }
-      }
-    }
-  });
+  // $("#send").click(function() {
+  //   var name = $("#name").val();
+  //   var email = $("#email").val();
+  //   var contact = $("#contactno").val();
+  //   var message = $("#message").val();
+  //   if (name == "" || email == "" || contactno == "" || message == "") {
+  //     alert("Please Fill All Fields");
+  //   } else {
+  //     if (validateEmail(email)) {
+  //       $("#contact").css("display", "none");
+  //     } else {
+  //       alert('Invalid Email Address');
+  //     }
+  //     function validateEmail(email) {
+  //       var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+  //       if (filter.test(email)) {
+  //         return true;
+  //       } else {
+  //         return false;
+  //       }
+  //     }
+  //   }
+  // });
 });

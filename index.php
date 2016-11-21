@@ -13,8 +13,7 @@
     <link href="/contact.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-		<!-- <script type="text/javascript" src="/jquery-1.3.2.min.js"></script> -->
+		<script type="text/javascript" src="/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="/jquery-popup.js"></script>
 </head>
 <!-- Contact Form -->
