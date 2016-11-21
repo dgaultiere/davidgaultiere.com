@@ -3,17 +3,14 @@ $(document).ready(function() {
   function popup() {
     $("#logindiv").css("display", "block");
   }
-  $("#login #cancel").click(function() {
-    $(this).parent().parent().hide();
-  });
   $("#onclick").click(function() {
-    $("#contactdiv").css("display", "block");
+    $("#contact").css("display", "block");
   });
   $("#contact #cancel").click(function() {
     $(this).parent().parent().hide();
   });
 
-  // Contact form popup send-button click event.
+  // Contact form popup send-button click event
   $("#send").click(function() {
     var name = $("#name").val();
     var email = $("#email").val();
@@ -23,7 +20,7 @@ $(document).ready(function() {
       alert("Please Fill All Fields");
     } else {
       if (validateEmail(email)) {
-        $("#contactdiv").css("display", "none");
+        $("#contact").css("display", "none");
       } else {
         alert('Invalid Email Address');
       }
@@ -35,17 +32,6 @@ $(document).ready(function() {
           return false;
         }
       }
-    }
-  });
-
-  // Login form popup login-button click event.
-  $("#loginbtn").click(function() {
-    var name = $("#username").val();
-    var password = $("#password").val();
-    if (username == "" || password == "") {
-      alert("Username or Password was Wrong");
-    } else {
-      $("#logindiv").css("display", "none");
     }
   });
 });

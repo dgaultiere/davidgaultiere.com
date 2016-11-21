@@ -15,7 +15,7 @@ html {
 
 body {
     display: block;
-    font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
     font-size: 18px;
     color: #333;
     padding: 0;
@@ -95,7 +95,7 @@ a:active {
   text-indent: -999999px;
 }
 
-#name {
+#my-name {
   display: block;
   margin: 40px auto 0;
   text-align: center;
@@ -205,27 +205,22 @@ a:active {
 		font-size: 26px;
 }
 
-#ichthys,
-#ichthys:visited {
+#ichthys {
     display: block;
     margin: 40px auto 20px;
     text-align: center;
+}
+
+#ichthys a,
+#ichthys a:visited {
     color: #333;
     font-size: 14px;
 }
 
-#ichthys:hover,
-#ichthys:active,
-#ichthys:focus {
+#ichthys a:hover,
+#ichthys a:active,
+#ichthys a:focus {
     color: #2099B4;
-}
-
-div#balloon {
-	box-shadow: 0 0 5px #999;
-}
-
-#balloon-frame #document .light form {
-	background: #f9f9f9;
 }
 
 

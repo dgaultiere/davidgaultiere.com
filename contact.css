@@ -1,0 +1,66 @@
+#contact {
+  background-color: #fff;
+  opacity: 0.92;
+  height: 100%;
+  width: 500px;
+  max-width: 90%;
+  /*display: none;*/
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+input,
+textarea,
+.error,
+.success {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  border-color: #9c9c9c;
+  color: #333;
+}
+
+input:focus,
+textarea:focus {
+  -webkit-appearance: none;
+  outline: none;
+  border-color: #2099B4;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: #2099B4;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active,
+input[type=submit]:focus {
+  background-color: #333;
+}
+
+.error {
+  border-color: #c23428;
+  color: #c23428;
+}
+
+.success {
+  border-color: #2eb150;
+  color: #2eb150;
+}
