@@ -243,10 +243,12 @@ a:active {
 #work-page #name {
 	margin: 15px auto 0;
   font-size: 22px;
+	font-weight: 400;
+	text-align: center;
 }
 
 #work-page #title {
-	margin: 50px auto;
+	margin: 48px auto;
 	font-size: 28px;
 	font-weight: 700;
 }

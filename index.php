@@ -49,7 +49,7 @@
     <div id="contact">
 			<div id="contact-form">
 				<span id="cancel">&times;</span>
-				<h3>Contact Me</h3>
+				<h2>Contact Me</h2>
 	      <?php
 	      if (!empty($error_msg)) {
 	        echo '<p class="error">'. implode("<br />", $error_msg) . "</p>";
