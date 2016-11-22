@@ -62,6 +62,7 @@ textarea,
   font-size: 16px;
   font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
   background-color: transparent;
+  -webkit-appearance: none;
 }
 
 input,
