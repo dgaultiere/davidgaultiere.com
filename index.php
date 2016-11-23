@@ -27,7 +27,7 @@
 
     <div id="about" class="description text-content">
         <p>Self-starter and technology enthusiast. Passionate about creativity, culture, and innovation. Husband to the wonderful <a href="http://www.loveandelyse.com/" target="_blank" title="Love & Elyse">Brianne Elyse</a>, sometimes <a href="http://www.medium.com/@dgaultiere" title="Read my blog on Medium.com" target="_blank">writer</a>, and always learner. Currently serving as a Product Manager at <a href="http://www.appfolioinc.com/" target="_blank" title="Cloud-based software designed for specific industries">Appfolio</a>. Previously launched startups <a href="http://www.fastcompany.com/3029879/most-creative-people/can-the-lyft-of-moving-take-the-pain-out-of-one-of-lifes-most-hated-act" target="_blank" title="Using technology and crowd-sourcing to take the pain out of moving">NextMover</a>, Fonogram, and <a href="http://www.mizubatea.com/" target="_blank" title="All tea is not created equal">Mizuba Tea Co</a>.</p>
-        <p>View <a href="/work" title="My Work">my work</a> or <a id="onclick">get in touch</a>.</p>
+        <p>View <a href="/work" title="My Work">my work</a> or <a id="contact-button">get in touch</a>.</p>
     </div>
 
     <!-- <a class="tooltip"><span>Coming Soon</span>Something Cool</a> -->

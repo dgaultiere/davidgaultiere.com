@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#onclick").click(function() {
+  $("#contact-button").click(function() {
     $("#contact").css("display", "block");
   });
   $("#contact #cancel").click(function() {
