@@ -4,7 +4,6 @@
 ---------------------------------------- */
 
 
-
 /* ----------------------------------------
 		Base Styles
 ---------------------------------------- */
@@ -81,6 +80,28 @@ a:active {
 	width: 97%;
 	margin: 1.5%;
 }
+
+/* Prevent flash of unstyled text */
+.text-content {
+  opacity: 1;
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+  -webkit-transition: -webkit-transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.wf-loading .text-content {
+  opacity: 0;
+  transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+}
+
+
+/* ----------------------------------------
+		Content Styles
+---------------------------------------- */
 
 #headshot {
   display: block;
