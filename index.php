@@ -4,7 +4,7 @@
   <title>David Gaultiere</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="shortcut icon" href="/img/favicon.ico">
 
   <script type="text/javascript" src="//use.typekit.net/bex1ayv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

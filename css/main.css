@@ -108,7 +108,7 @@ a:active {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url('/images/david.jpg');
+  background-image: url('/img/david.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
