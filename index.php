@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>David Gaultiere</title>
+  <meta charset="utf-8">
+	<meta title="David Gaultiere">
+	<meta description="Self-starter and technology enthusiast. Passionate about creativity, culture, and innovation.">
+	<meta creator="David Gaultiere">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/img/favicon.ico">
