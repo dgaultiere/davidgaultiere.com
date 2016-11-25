@@ -1,5 +1,9 @@
 <?php
 
+// ========================= //
+//  PHP CONTACT FORM PLUGIN  //
+// ========================= //
+
 // OPTIONS
 $yourEmail = "dgaultiere@gmail.com"; // the email address you wish to receive these mails through
 $yourWebsite = "DavidGaultiere.com"; // the name of your website
@@ -70,16 +74,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	}
 
 	if (!empty($_POST['name']) && !preg_match("/^[a-zA-Z-'\s]*$/", stripslashes($_POST['name'])))
-		$error_msg[] = "The name field must not contain special characters.\r\n";
+		$error_msg[] = "The name field may not contain special characters.\r\n";
 	if (!empty($_POST['email']) && !preg_match('/^([a-z0-9])(([-a-z0-9._])*([a-z0-9]))*\@([a-z0-9])(([a-z0-9-])*([a-z0-9]))+' . '(\.([a-z0-9])([-a-z0-9_-])?([a-z0-9])+)+$/i', strtolower($_POST['email'])))
-		$error_msg[] = "That is not a valid email address.\r\n";
+		$error_msg[] = "Please provide a valid email address.\r\n";
 	if (!empty($_POST['url']) && !preg_match('/^(http|https):\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+)(:(\d+))?\/?/i', $_POST['url']))
-		$error_msg[] = "Invalid website URL.\r\n";
+		$error_msg[] = "Please provide a valid website URL.\r\n";
 
 	if ($error_msg == NULL && $points <= $maxPoints) {
-		$subject = "Somone has contacted you from DavidGaultiere.com";
+		$subject = "Contact from DavidGaultiere.com";
 
-		$message = "You received this message through your website: \n\n";
+		$message = "Message: \n\n";
 		foreach ($_POST as $key => $val) {
 			if (is_array($val)) {
 				foreach ($val as $subval) {
@@ -107,15 +111,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				header("Location: $thanksPage");
 				exit;
 			} else {
-				$result = 'Your email was successfully sent.';
+				$result = 'Thank you for reaching out. I will get back to you shortly.';
 				$disable = true;
 			}
 		} else {
-			$error_msg[] = 'Your email could not be sent this time. ['.$points.']';
+			$error_msg[] = 'Something went wrong. Please try again later. ['.$points.']';
 		}
 	} else {
 		if (empty($error_msg))
-			$error_msg[] = 'Your email looks too much like spam, and could not be sent this time. ['.$points.']';
+			$error_msg[] = 'Your message looks too much like spam. Please edit and try again. ['.$points.']';
 	}
 }
 function get_data($var) {
