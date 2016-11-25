@@ -14,7 +14,7 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<script type="text/javascript" src="/js/jquery-1.3.2.min.js"></script>
-  <script type="text/javascript" src="/js/jquery-popup.js"></script>
+  <script type="text/javascript" src="/js/contact.js"></script>
 </head>
 <!-- Contact Form -->
 	<?php include dirname(__FILE__)."/contact.php"; ?>
