@@ -24,7 +24,7 @@
 	<?php include dirname(__FILE__)."/contact.php"; ?>
 <!-- /Contact Form -->
 <body id="home-page">
-
+  
   <div id="headshot">David Gaultiere</div>
 
   <h1 id="my-name" class="text-content">David Gaultiere</h1>
