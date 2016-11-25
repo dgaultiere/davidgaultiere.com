@@ -42,7 +42,7 @@
   margin: 10px 0;
 }
 
-#cancel {
+#x-mark {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -61,7 +61,8 @@
 input,
 textarea,
 .error,
-.success {
+.success,
+.button {
   display: block;
   width: 100%;
   margin: 12px 0;
@@ -91,16 +92,16 @@ textarea {
   resize: none;
 }
 
-input[type=submit] {
+.button {
   background-color: #2099B4;
   color: #fff;
   border-color: transparent;
   cursor: pointer;
 }
 
-input[type=submit]:hover,
-input[type=submit]:active,
-input[type=submit]:focus {
+.button:hover,
+.button:active,
+.button:focus {
   background-color: #333;
 }
 

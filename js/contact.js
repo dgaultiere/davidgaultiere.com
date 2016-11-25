@@ -20,7 +20,7 @@ $(document).ready(function() {
   $("#contact-button").click(function() {
     $("#contact").css("display", "block");
   });
-  $("#contact #cancel").click(function() {
+  $("#contact .close").click(function() {
     $(this).parent().parent().hide();
   });
   if(contactResult != null) {

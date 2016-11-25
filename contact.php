@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				header("Location: $thanksPage");
 				exit;
 			} else {
-				$result = 'Thank you for reaching out. I will get back to you shortly.';
+				$result = 'Thanks for your message. I will get back to you shortly.';
 				$disable = true;
 			}
 		} else {

@@ -47,7 +47,7 @@
 
   <div id="contact">
 		<div id="contact-form">
-			<span id="cancel">&times;</span>
+			<span id="x-mark" class="close">&times;</span>
 			<h2>Contact Me</h2>
       <?php
       if (!empty($error_msg)) {
@@ -55,7 +55,8 @@
       }
       if ($result != NULL) {
         echo '<p class="success">'. $result . "</p>";
-      }
+        echo '<button class="button close">Done</button>';
+      } else {
       ?>
       <form action="?result=<?php if(!empty($error_msg)) { ?>error<?php }; if($result != NULL) { ?>success<?php }; ?>" method="post">
         <noscript>
@@ -64,8 +65,9 @@
         <input type="text" name="name" id="name" placeholder="Name" value="<?php get_data("name"); ?>">
         <input type="text" name="email" id="email" placeholder="Email" value="<?php get_data("email"); ?>">
         <textarea name="comments" id="comments" rows="5" cols="20" placeholder="Message"><?php get_data("comments"); ?></textarea>
-        <input type="submit" name="submit" id="submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?>>
+        <input type="submit" name="submit" id="submit" class="button" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?>>
       </form>
+      <?php }; ?>
 		</div>
   </div>
 
