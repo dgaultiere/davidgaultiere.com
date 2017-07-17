@@ -342,9 +342,12 @@ a:active {
 	height: auto;
 }
 
+.grid-links .grid-item.padded {
+  padding: 6%;
+}
+
 .grid-links .grid-item.padded img {
   max-width: 88%;
-  margin: 6%;
 }
 
 .grid-links .grid-item h4 {
@@ -378,6 +381,15 @@ a:active {
 /* ----------------------------------------
     Photos Page
 ---------------------------------------- */
+
+#photography {
+  margin: 60px auto;
+}
+
+#photography {
+
+}
+
 .photo-grid {
   display: table;
   width: 100%;
@@ -391,9 +403,8 @@ a:active {
   justify-content: center;
   align-items: center;
   float: left;
-  max-width: 100%;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   padding: 10px;
   overflow: hidden;
   position: relative;
@@ -412,10 +423,6 @@ a:active {
   max-height: 100%;
   margin: 0 auto;
   border-radius: 2px;
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
 }
 
 
@@ -424,6 +431,33 @@ a:active {
 		Media Queries
 ---------------------------------------- */
 
+@media screen and (max-width: 360px) {
+  .hr-side {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .photo-grid {
+    max-width: 360px;
+  }
+
+  .photo-grid-item {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .photo-grid {
+    max-width: 600px;
+  }
+
+  .photo-grid-item {
+    width: 200px;
+    height: 200px;
+  }
+}
 
 @media screen and (min-width: 768px) {
 	.grid-item {
@@ -452,6 +486,10 @@ a:active {
 	.grid-item {
 		width: 30.33333%;
 	}
+
+  .photo-grid {
+    max-width: 800px;
+  }
 }
 
 @media screen and (min-width: 1200px) { }
