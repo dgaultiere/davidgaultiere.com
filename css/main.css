@@ -1,5 +1,5 @@
 /* ----------------------------------------
-		CSS by David Gaultiere
+		Website by David Gaultiere
 		http://www.davidgaultiere.com
 ---------------------------------------- */
 
@@ -73,15 +73,25 @@ a:active {
 }
 
 .grid-item {
-	display: block;
+	display: inline;
 	float: left;
-	height: auto;
+	height: 75%;
 	width: 97%;
 	margin: 1.5%;
+  overflow: hidden;
+}
+
+.grid-item img {
+  max-width: 100%;
+}
+
+.light-em {
+  color: #aaa;
+  font-weight: 600;
 }
 
 /* Prevent flash of unstyled text */
-.text-content {
+.wf-loading-content {
   opacity: 1;
   transform: translateY(0);
   -ms-transform: translateY(0);
@@ -90,7 +100,7 @@ a:active {
   -webkit-transition: -webkit-transform .4s ease-in-out, opacity .4s ease-in-out;
 }
 
-.wf-loading .text-content {
+.wf-loading .wf-loading-content {
   opacity: 0;
   transform: translateY(-20px);
   -ms-transform: translateY(-20px);
@@ -135,7 +145,7 @@ a:active {
   display: block;
   margin: 30px auto;
   width: 98%;
-  max-width: 640px;
+  max-width: 690px;
   padding: 1%;
 }
 
@@ -254,36 +264,36 @@ a:active {
 	font-size: 16px;
 }
 
-#work-page #headshot {
+.subpage #headshot {
   margin: 40px auto 0;
   width: 70px;
   height: 70px;
 }
 
-#work-page #name {
+.subpage #name {
 	margin: 15px auto 0;
   font-size: 22px;
 	font-weight: 400;
 	text-align: center;
 }
 
-#work-page #title {
+.subpage #title {
 	margin: 48px auto;
 	font-size: 28px;
 	font-weight: 700;
 }
 
-#work-page .description {
+.subpage .description {
 	margin: 40px auto;
 	max-width: 360px;
 }
 
-#work-page em {
+.subpage em {
 	font-style: normal;
 	font-weight: 700;
 }
 
-#work-page .hr {
+.subpage .hr {
 	width: 40%;
 	max-width: 200px;
 	margin: 20px auto;
@@ -298,14 +308,13 @@ a:active {
 	margin-bottom: 45px;
 }
 
-#work-page .grid {
+.subpage .grid {
 	max-width: 768px;
 }
 
-#work-page a.grid-item {
+.subpage a.grid-item {
 	color: #333;
 	min-width: 47%;
-	border-radius: 5px;
 	-webkit-transition: 0.3s ease all;
 	   -moz-transition: 0.3s ease all;
 	    -ms-transition: 0.3s ease all;
@@ -313,15 +322,19 @@ a:active {
 	        transition: 0.3s ease all;
 }
 
-#work-page a.grid-item:hover,
-#work-page a.grid-item:focus,
-#work-page a.grid-item:active {
+.grid-links a.grid-item {
+  border-radius: 5px;
+}
+
+.grid-links a.grid-item:hover,
+.grid-links a.grid-item:focus,
+.grid-links a.grid-item:active {
 	color: rgba(26,153,181,1);
 	background: rgba(150,150,150,0.18);
 	/* background: rgba(115,187,199,0.2); */
 }
 
-#work-page .grid-item img {
+.grid-links .grid-item img {
 	display: block;
 	margin: 0 auto;
 	width: 400px;
@@ -329,13 +342,18 @@ a:active {
 	height: auto;
 }
 
-#work-page .grid-item h4 {
+.grid-links .grid-item.padded img {
+  max-width: 88%;
+  margin: 6%;
+}
+
+.grid-links .grid-item h4 {
 	text-align: center;
 	margin: 15px auto 5px;
 	padding: none;
 }
 
-#work-page .grid-item h5 {
+.grid-links .grid-item h5 {
 	text-align: center;
 	margin: 0 auto 25px;
 	padding: none;
@@ -344,15 +362,60 @@ a:active {
 	font-size: 14px;
 }
 
-#work-page #blurb h2 {
+.subpage #blurb h2 {
 	text-align: center;
 	margin-bottom: 35px;
 }
 
-#work-page #blurb h3 {
+.subpage #blurb h3 {
 	text-align: center;
 	font-style: italic;
 	margin-bottom: 25px;
+}
+
+
+
+/* ----------------------------------------
+    Photos Page
+---------------------------------------- */
+.photo-grid {
+  display: table;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto 100px;
+}
+
+.photo-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-grid-item:hover,
+.photo-grid-item:active,
+.photo-grid-item:focus {
+  background-color: #f0f0f0;
+  border-radius: 2px;
+}
+
+.photo-grid-item img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  border-radius: 2px;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
 }
 
 

@@ -4,7 +4,7 @@
   <title>David Gaultiere</title>
   <meta charset="utf-8">
 	<meta title="David Gaultiere">
-	<meta description="Self-starter and technology enthusiast. Passionate about creativity, culture, and innovation.">
+	<meta description="Technologist, innovator, dreamer &amp; doer.">
 	<meta creator="David Gaultiere">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,27 +27,29 @@
   
   <div id="headshot">David Gaultiere</div>
 
-  <h1 id="my-name" class="text-content">David Gaultiere</h1>
+  <div class="wf-loading-content">
+    <h1 id="my-name">David Gaultiere</h1>
 
-  <div id="about" class="description text-content">
-    <p>Technologist, innovator, dreamer &amp; doer. Christ-follower &amp; husband to the wonderful <a href="http://www.loveandelyse.com/" target="_blank" title="Design &amp; illustration by Love & Elyse">Brianne Elyse</a>. Sometimes <a href="http://www.medium.com/@dgaultiere" title="Read my blog on Medium" target="_blank">writer</a> and always learner. Currently, Product Manager at <a href="http://www.appfolioinc.com/" target="_blank" title="Enabling small &amp; medium-sized business to grow and compete">Appfolio</a>. Previously launched startups <a href="http://www.fastcompany.com/3029879/most-creative-people/can-the-lyft-of-moving-take-the-pain-out-of-one-of-lifes-most-hated-act" target="_blank" title="Uber for moving">NextMover</a>, Fonogram, and <a href="http://www.mizubatea.com/" target="_blank" title="All tea is not created equal">Mizuba Tea Co</a>. Alumnus, <a href="http://westmont.edu/" title="A small school for big thinkers" target="_blank">Westmont College</a> and <a href="http://alumni.altmba.com/davidgaultiere/" title="Combatting the lizard brain" target="_blank">altMBA8</a>.</p>
-    <p>View <a href="/work" title="My Work">my work</a> or <a id="contact-button">get in touch</a>.</p>
-  </div>
-
-  <!-- <a class="tooltip"><span>Coming Soon</span>Something Cool</a> -->
-
-  <div id="connect" class="text-content">
-    <h3>Connect with me</h3>
-    <div id="social">
-      <a href="http://www.twitter.com/dgaultiere" title="Random thoughts and shares on biz and tech" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="http://www.linkedin.com/in/dgaultiere" title="Over-glorified professionalism" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="http://www.medium.com/@dgaultiere" title="Sometimes I write" target="_blank"><i class="fa fa-medium"></i></a>
+    <div id="about" class="description">
+      <p>Technologist, innovator, dreamer &amp; doer. Christ-follower &amp; husband to the wonderful <a href="http://www.loveandelyse.com/" target="_blank" title="Design &amp; illustration by Love & Elyse">Brianne Elyse</a>. Amateur <a href="/photography/" title="Memories in film and digital">photographer</a>, sometimes <a href="http://www.medium.com/@dgaultiere" title="Read my blog on Medium" target="_blank">writer</a> and always learner. Currently, Product Manager at <a href="http://www.appfolioinc.com/" target="_blank" title="Enabling small &amp; medium-sized business to grow and compete">Appfolio</a>. Previously launched startups <a href="http://www.fastcompany.com/3029879/most-creative-people/can-the-lyft-of-moving-take-the-pain-out-of-one-of-lifes-most-hated-act" target="_blank" title="Uber for moving">NextMover</a>, Fonogram, and <a href="http://www.mizubatea.com/" target="_blank" title="All tea is not created equal">Mizuba Tea Co</a>. Alumnus, <a href="http://westmont.edu/" title="A small school for big thinkers" target="_blank">Westmont College</a> and <a href="http://alumni.altmba.com/davidgaultiere/" title="Combatting the lizard brain" target="_blank">altMBA8</a>.</p>
+      <p>View <a href="/work" title="My Work">my work</a> or <a id="contact-button">get in touch</a>.</p>
     </div>
-  </div>
 
-  <div id="ichthys" class="text-content">
-		<a href="http://bible.com/59/eph.2.8.esv" target="_blank">[ Eph 2:8 ]</a>
-	</div>
+    <!-- <a class="tooltip"><span>Coming Soon</span>Something Cool</a> -->
+
+    <div id="connect">
+      <h3>Connect with me</h3>
+      <div id="social">
+        <a href="http://www.twitter.com/dgaultiere" title="Random thoughts and shares on biz and tech" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.linkedin.com/in/dgaultiere" title="Over-glorified professionalism" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="http://www.medium.com/@dgaultiere" title="Sometimes I write" target="_blank"><i class="fa fa-medium"></i></a>
+      </div>
+    </div>
+
+    <div id="ichthys">
+  		<a href="http://bible.com/59/eph.2.8.esv" target="_blank">[ Eph 2:8 ]</a>
+  	</div>
+  </div>
 
   <div id="contact">
 		<div id="contact-form">
