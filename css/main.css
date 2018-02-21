@@ -14,8 +14,7 @@ html {
 
 body {
     display: block;
-		font-family: 'brandon-grotesque', 'Brandon Grotesque', 'Helvetica', 'Arial', sans-serif;
-    /* font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif; */
+    font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
 		font-weight: 300;
     font-size: 18px;
     color: #333;
@@ -42,6 +41,10 @@ a:focus,
 a:active {
     color: #333;
     cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'brandon-grotesque', 'Brandon Grotesque', 'Helvetica', 'Arial', sans-serif;
 }
 
 .hr {
@@ -374,7 +377,6 @@ a:active {
 
 .subpage #blurb h3 {
 	text-align: center;
-	font-style: italic;
 	margin-bottom: 25px;
 }
 

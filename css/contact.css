@@ -70,8 +70,7 @@ textarea,
   border: 1px solid;
   border-radius: 3px;
   font-size: 16px;
-  font-family: 'brandon-grotesque', 'Brandon Grotesque', 'Helvetica', 'Arial', sans-serif;
-  /* font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif; */
+  font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
   background-color: transparent;
   -webkit-appearance: none;
 }
