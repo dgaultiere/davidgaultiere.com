@@ -14,7 +14,8 @@ html {
 
 body {
     display: block;
-    font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+		font-family: 'brandon-grotesque', 'Brandon Grotesque', 'Helvetica', 'Arial', sans-serif;
+    /* font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica', 'Arial', sans-serif; */
     font-size: 18px;
     color: #333;
     padding: 0;
