@@ -193,6 +193,26 @@ h1,h2,h3,h4,h5,h6 {
     color: #2099B4;
 }
 
+#social #medium i {
+	transform: translate(0,1px);
+}
+
+#social #tesla {
+	position: relative;
+}
+
+#social #tesla i {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: center / contain no-repeat url('/img/tesla-icon.png');
+	transform: translate(0,3px);
+}
+
+#social #tesla i:hover {
+	background: center / contain no-repeat url('/img/tesla-icon-hover.png');
+}
+
 .tooltip {
     display: inline;
     position: relative;
