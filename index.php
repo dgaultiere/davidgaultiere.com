@@ -43,7 +43,6 @@
         <a href="http://www.twitter.com/dgaultiere" title="Random thoughts and shares on biz and tech" target="_blank"><i class="fa fa-twitter"></i></a>
         <a href="http://www.linkedin.com/in/dgaultiere" title="Over-glorified professionalism" target="_blank"><i class="fa fa-linkedin"></i></a>
         <a id="medium" href="http://www.medium.com/@dgaultiere" title="Sometimes I write" target="_blank"><i class="fa fa-medium"></i></a>
-        <a id="tesla" href="https://ts.la/david55296" title="Join the revolution" target="_blank"><i></i></a>
       </div>
     </div>
 
