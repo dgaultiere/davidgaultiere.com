@@ -10,8 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/img/favicon.ico">
 
-  <script type="text/javascript" src="//use.typekit.net/bex1ayv.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="https://use.typekit.net/mlg3htu.css">
 
   <link href="/css/main.css" rel="stylesheet">
   <link href="/css/contact.css" rel="stylesheet">
