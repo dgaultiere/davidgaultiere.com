@@ -13,15 +13,8 @@
   <link rel="stylesheet" href="https://use.typekit.net/mlg3htu.css">
 
   <link href="/css/main.css" rel="stylesheet">
-  <link href="/css/contact.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-	<script type="text/javascript" src="/js/jquery-1.3.2.min.js"></script>
-  <script type="text/javascript" src="/js/contact.js"></script>
 </head>
-<!-- Contact Form -->
-	<?php include dirname(__FILE__)."/contact.php"; ?>
-<!-- /Contact Form -->
 <body id="home-page">
 
   <div id="headshot">David Gaultiere</div>
@@ -48,32 +41,6 @@
     <div id="ichthys">
   		<a href="http://bible.com/59/eph.2.8.esv" target="_blank">[ Eph 2:8 ]</a>
   	</div>
-  </div>
-
-  <div id="contact">
-		<div id="contact-form">
-			<span id="x-mark" class="close">&times;</span>
-			<h2>Contact Me</h2>
-      <?php
-      if (!empty($error_msg)) {
-        echo '<p class="error">'. implode("<br />", $error_msg) . "</p>";
-      }
-      if ($result != NULL) {
-        echo '<p class="success">'. $result . "</p>";
-        echo '<button class="button close">Done</button>';
-      } else {
-      ?>
-      <form action="?result=<?php if(!empty($error_msg)) { ?>error<?php }; if($result != NULL) { ?>success<?php }; ?>" method="post">
-        <noscript>
-          <input type="hidden" name="nojs" id="nojs">
-        </noscript>
-        <input type="text" name="name" id="name" placeholder="Name" value="<?php get_data("name"); ?>">
-        <input type="text" name="email" id="email" placeholder="Email" value="<?php get_data("email"); ?>">
-        <textarea name="comments" id="comments" rows="5" cols="20" placeholder="Message"><?php get_data("comments"); ?></textarea>
-        <input type="submit" name="submit" id="submit" class="button" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?>>
-      </form>
-      <?php }; ?>
-		</div>
   </div>
 
 	<script>
