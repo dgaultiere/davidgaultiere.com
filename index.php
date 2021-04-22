@@ -4,7 +4,7 @@
   <title>David Gaultiere</title>
   <meta charset="utf-8">
 	<meta title="David Gaultiere">
-	<meta description="Technologist, innovator, dreamer &amp; doer.">
+	<meta description="Builder, innovator, dreamer &amp; doer.">
 	<meta creator="David Gaultiere">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,9 @@
     <h1 id="my-name">David Gaultiere</h1>
 
     <div id="about" class="description">
-      <p>Builder, innovator, dreamer &amp; doer. Husband to the wonderful <a href="http://www.briannelyse.com/" target="_blank" title="Brianne Elyse Interiors">Brianne Elyse</a>. Amateur <a href="/photography/" title="Memories in film and digital">photographer</a>, sometimes <a href="http://www.medium.com/@dgaultiere" title="Read my blog on Medium" target="_blank">writer</a> and always learner. Currently, Director of Product at <a href="http://www.appfolioinc.com/" target="_blank" title="Enabling small &amp; medium-sized business to grow and compete">Appfolio</a>. Previously launched startups <a href="http://www.fastcompany.com/3029879/most-creative-people/can-the-lyft-of-moving-take-the-pain-out-of-one-of-lifes-most-hated-act" target="_blank" title="Uber for moving">NextMover</a>, Fonogram, and <a href="http://www.mizubatea.com/" target="_blank" title="All tea is not created equal">Mizuba Tea Co</a>. Alumnus, <a href="http://westmont.edu/" title="A small school for big thinkers" target="_blank">Westmont College</a> and <a href="http://altmba.com" title="Combatting the lizard brain" target="_blank">altMBA8</a>.</p>
+      <p>
+        Builder, innovator, dreamer &amp; doer. Husband to the wonderful <a href="http://www.briannelyse.com/" target="_blank" title="Brianne Elyse Interiors">Brianne Elyse</a>. I love the outdoors, making things with my hands, and tyring new experiences. Currently, Director of Product at <a href="http://www.appfolioinc.com/" target="_blank" title="Enabling small &amp; medium-sized business to grow and compete">Appfolio</a>. Previously launched startups <a href="http://www.fastcompany.com/3029879/most-creative-people/can-the-lyft-of-moving-take-the-pain-out-of-one-of-lifes-most-hated-act" target="_blank" title="Uber for moving">NextMover</a>, Fonogram, and <a href="http://www.mizubatea.com/" target="_blank" title="All tea is not created equal">Mizuba Tea Co</a>. Alumnus, <a href="http://westmont.edu/" title="A small school for big thinkers" target="_blank">Westmont College</a> and <a href="http://altmba.com" title="Combatting the lizard brain" target="_blank">altMBA8</a>.
+      </p>
     </div>
 
     <!-- <a class="tooltip"><span>Coming Soon</span>Something Cool</a> -->
