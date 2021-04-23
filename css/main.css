@@ -47,6 +47,12 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'brandon-grotesque', 'Brandon Grotesque', 'Helvetica', 'Arial', sans-serif;
 }
 
+p {
+	line-height: 1.6;
+  margin: 0 auto 15px;
+  padding-bottom: 0;
+}
+
 .hr {
 	display: block;
 	width: 96%;
@@ -93,6 +99,23 @@ h1,h2,h3,h4,h5,h6 {
 .light-em {
   color: #aaa;
   font-weight: 600;
+}
+
+.btn {
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+
+.btn-primary {
+	background-color: #2099B4;
+	color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: #333;
+	text-decoration: none;
 }
 
 /* Prevent flash of unstyled text */
@@ -155,10 +178,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .description p {
-    margin: 0 auto 15px;
-    padding-bottom: 0;
     text-align: center;
-    line-height: 1.6;
 }
 
 #connect {
@@ -205,13 +225,13 @@ h1,h2,h3,h4,h5,h6 {
 	display: inline-block;
 	width: 26px;
 	height: 26px;
-	background: center / contain no-repeat url('/img/tesla-icon.png');
+	background: center / contain no-repeat url('img/tesla-icon.png');
 	transform: translate(0,3px);
 	margin-bottom: -1px;
 }
 
 #social #tesla i:hover {
-	background: center / contain no-repeat url('/img/tesla-icon-hover.png');
+	background: center / contain no-repeat url('img/tesla-icon-hover.png');
 }
 
 .tooltip {
@@ -258,6 +278,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .fa.fa-medium {
 		font-size: 26px;
+}
+
+.fa-external-link {
+	font-size: 15px !important;
 }
 
 #ichthys {
@@ -331,16 +355,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #portfolio h2 {
 	text-align: center;
-	margin-bottom: 45px;
-}
-
-#portfolio img {
-	display: block;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 300px;
-	height: auto;
-	max-height: 300px;
+	margin-bottom: 70px;
 }
 
 .subpage .grid {
@@ -355,6 +370,34 @@ h1,h2,h3,h4,h5,h6 {
 	    -ms-transition: 0.3s ease all;
 	     -o-transition: 0.3s ease all;
 	        transition: 0.3s ease all;
+}
+
+.grid-row {
+	margin: 0 auto 70px;
+}
+
+.grid-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-row-image {
+	float: left;
+	margin: 0;
+	width: 21%;
+}
+
+.grid-row-image img {
+	display: inline-block;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.grid-row-description {
+	float: left;
+	width: 71%;
+	margin-left: 8%;
 }
 
 .grid-links a.grid-item {
@@ -385,13 +428,15 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 88%;
 }
 
-.grid-links .grid-item h4 {
+.grid-links .grid-item h4,
+.grid-row-image h4 {
 	text-align: center;
 	margin: 15px auto 5px;
 	padding: none;
 }
 
-.grid-links .grid-item h5 {
+.grid-links .grid-item h5,
+.grid-row-image h5 {
 	text-align: center;
 	margin: 0 auto 25px;
 	padding: none;
