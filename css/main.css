@@ -146,7 +146,7 @@ p {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url('/img/david.jpg');
+  background-image: url('../img/david.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,13 +225,13 @@ p {
 	display: inline-block;
 	width: 26px;
 	height: 26px;
-	background: center / contain no-repeat url('img/tesla-icon.png');
+	background: center / contain no-repeat url('../img/tesla-icon.png');
 	transform: translate(0,3px);
 	margin-bottom: -1px;
 }
 
 #social #tesla i:hover {
-	background: center / contain no-repeat url('img/tesla-icon-hover.png');
+	background: center / contain no-repeat url('../img/tesla-icon-hover.png');
 }
 
 .tooltip {
